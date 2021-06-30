@@ -7,10 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8472B862679DDD70043A74F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8472B852679DDD70043A74F /* main.swift */; };
+		D8472B8C2679DE100043A74F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D8472B8B2679DE100043A74F /* Alamofire */; };
+		D8472B8F2679DE4D0043A74F /* SwiftSoup in Frameworks */ = {isa = PBXBuildFile; productRef = D8472B8E2679DE4D0043A74F /* SwiftSoup */; };
+		D8472B972679E20F0043A74F /* downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8472B942679E20E0043A74F /* downloader.swift */; };
+		D8472B982679E20F0043A74F /* parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8472B952679E20E0043A74F /* parser.swift */; };
+		D8472B992679E20F0043A74F /* extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8472B962679E20F0043A74F /* extensions.swift */; };
 		D85AC3912671C5BC006D1256 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85AC3902671C5BC006D1256 /* main.swift */; };
+		D85AC3992671D85C006D1256 /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = D85AC3982671D85C006D1256 /* ArgumentParser */; };
+		D85AC39C2671D8C8006D1256 /* Progress in Frameworks */ = {isa = PBXBuildFile; productRef = D85AC39B2671D8C8006D1256 /* Progress */; };
+		D85AC39F2671D8E1006D1256 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D85AC39E2671D8E1006D1256 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		D8472B812679DDD70043A74F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		D85AC38B2671C5BC006D1256 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,26 +41,65 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D8472B832679DDD70043A74F /* wwdc-video-list */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "wwdc-video-list"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8472B852679DDD70043A74F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D8472B912679E11C0043A74F /* wwdc2020.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = wwdc2020.html; sourceTree = "<group>"; };
+		D8472B922679E1460043A74F /* wwdc2021.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = wwdc2021.html; sourceTree = "<group>"; };
+		D8472B932679E1700043A74F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D8472B942679E20E0043A74F /* downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = downloader.swift; sourceTree = "<group>"; };
+		D8472B952679E20E0043A74F /* parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parser.swift; sourceTree = "<group>"; };
+		D8472B962679E20F0043A74F /* extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = extensions.swift; sourceTree = "<group>"; };
 		D85AC38D2671C5BC006D1256 /* wwdc-subtitle-dl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "wwdc-subtitle-dl"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85AC3902671C5BC006D1256 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D8472B802679DDD70043A74F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8472B8C2679DE100043A74F /* Alamofire in Frameworks */,
+				D8472B8F2679DE4D0043A74F /* SwiftSoup in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D85AC38A2671C5BC006D1256 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85AC39F2671D8E1006D1256 /* Alamofire in Frameworks */,
+				D85AC3992671D85C006D1256 /* ArgumentParser in Frameworks */,
+				D85AC39C2671D8C8006D1256 /* Progress in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D8472B842679DDD70043A74F /* wwdc-video-list */ = {
+			isa = PBXGroup;
+			children = (
+				D8472B852679DDD70043A74F /* main.swift */,
+				D8472B912679E11C0043A74F /* wwdc2020.html */,
+				D8472B922679E1460043A74F /* wwdc2021.html */,
+			);
+			path = "wwdc-video-list";
+			sourceTree = "<group>";
+		};
+		D8472B8A2679DE100043A74F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D85AC3842671C5BC006D1256 = {
 			isa = PBXGroup;
 			children = (
 				D85AC38F2671C5BC006D1256 /* wwdc-subtitle-dl */,
+				D8472B842679DDD70043A74F /* wwdc-video-list */,
 				D85AC38E2671C5BC006D1256 /* Products */,
+				D8472B8A2679DE100043A74F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				D85AC38D2671C5BC006D1256 /* wwdc-subtitle-dl */,
+				D8472B832679DDD70043A74F /* wwdc-video-list */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +115,11 @@
 		D85AC38F2671C5BC006D1256 /* wwdc-subtitle-dl */ = {
 			isa = PBXGroup;
 			children = (
+				D8472B942679E20E0043A74F /* downloader.swift */,
+				D8472B962679E20F0043A74F /* extensions.swift */,
+				D8472B952679E20E0043A74F /* parser.swift */,
 				D85AC3902671C5BC006D1256 /* main.swift */,
+				D8472B932679E1700043A74F /* README.md */,
 			);
 			path = "wwdc-subtitle-dl";
 			sourceTree = "<group>";
@@ -65,6 +127,27 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D8472B822679DDD70043A74F /* wwdc-video-list */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8472B892679DDD70043A74F /* Build configuration list for PBXNativeTarget "wwdc-video-list" */;
+			buildPhases = (
+				D8472B7F2679DDD70043A74F /* Sources */,
+				D8472B802679DDD70043A74F /* Frameworks */,
+				D8472B812679DDD70043A74F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "wwdc-video-list";
+			packageProductDependencies = (
+				D8472B8B2679DE100043A74F /* Alamofire */,
+				D8472B8E2679DE4D0043A74F /* SwiftSoup */,
+			);
+			productName = "wwdc-video-list";
+			productReference = D8472B832679DDD70043A74F /* wwdc-video-list */;
+			productType = "com.apple.product-type.tool";
+		};
 		D85AC38C2671C5BC006D1256 /* wwdc-subtitle-dl */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D85AC3942671C5BC006D1256 /* Build configuration list for PBXNativeTarget "wwdc-subtitle-dl" */;
@@ -78,6 +161,11 @@
 			dependencies = (
 			);
 			name = "wwdc-subtitle-dl";
+			packageProductDependencies = (
+				D85AC3982671D85C006D1256 /* ArgumentParser */,
+				D85AC39B2671D8C8006D1256 /* Progress */,
+				D85AC39E2671D8E1006D1256 /* Alamofire */,
+			);
 			productName = "wwdc-subtitle-dl";
 			productReference = D85AC38D2671C5BC006D1256 /* wwdc-subtitle-dl */;
 			productType = "com.apple.product-type.tool";
@@ -92,6 +180,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					D8472B822679DDD70043A74F = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					D85AC38C2671C5BC006D1256 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -106,27 +197,67 @@
 				Base,
 			);
 			mainGroup = D85AC3842671C5BC006D1256;
+			packageReferences = (
+				D85AC3972671D85C006D1256 /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				D85AC39A2671D8C8006D1256 /* XCRemoteSwiftPackageReference "Progress" */,
+				D85AC39D2671D8E1006D1256 /* XCRemoteSwiftPackageReference "alamofire" */,
+				D8472B8D2679DE4D0043A74F /* XCRemoteSwiftPackageReference "SwiftSoup" */,
+			);
 			productRefGroup = D85AC38E2671C5BC006D1256 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D85AC38C2671C5BC006D1256 /* wwdc-subtitle-dl */,
+				D8472B822679DDD70043A74F /* wwdc-video-list */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D8472B7F2679DDD70043A74F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8472B862679DDD70043A74F /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D85AC3892671C5BC006D1256 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8472B982679E20F0043A74F /* parser.swift in Sources */,
+				D8472B972679E20F0043A74F /* downloader.swift in Sources */,
 				D85AC3912671C5BC006D1256 /* main.swift in Sources */,
+				D8472B992679E20F0043A74F /* extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D8472B872679DDD70043A74F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQPMU8SP5L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D8472B882679DDD70043A74F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EQPMU8SP5L;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		D85AC3922671C5BC006D1256 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -267,6 +398,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D8472B892679DDD70043A74F /* Build configuration list for PBXNativeTarget "wwdc-video-list" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8472B872679DDD70043A74F /* Debug */,
+				D8472B882679DDD70043A74F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D85AC3882671C5BC006D1256 /* Build configuration list for PBXProject "wwdc-subtitle-dl" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -286,6 +426,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8472B8D2679DE4D0043A74F /* XCRemoteSwiftPackageReference "SwiftSoup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/github-mirror-repos/SwiftSoup.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		D85AC3972671D85C006D1256 /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/github-mirror-repos/swift-argument-parser";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.3;
+			};
+		};
+		D85AC39A2671D8C8006D1256 /* XCRemoteSwiftPackageReference "Progress" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/github-mirror-repos/Progress.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+		D85AC39D2671D8E1006D1256 /* XCRemoteSwiftPackageReference "alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://gitee.com/mirrors/alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8472B8B2679DE100043A74F /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85AC39D2671D8E1006D1256 /* XCRemoteSwiftPackageReference "alamofire" */;
+			productName = Alamofire;
+		};
+		D8472B8E2679DE4D0043A74F /* SwiftSoup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8472B8D2679DE4D0043A74F /* XCRemoteSwiftPackageReference "SwiftSoup" */;
+			productName = SwiftSoup;
+		};
+		D85AC3982671D85C006D1256 /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85AC3972671D85C006D1256 /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+		D85AC39B2671D8C8006D1256 /* Progress */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85AC39A2671D8C8006D1256 /* XCRemoteSwiftPackageReference "Progress" */;
+			productName = Progress;
+		};
+		D85AC39E2671D8E1006D1256 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D85AC39D2671D8E1006D1256 /* XCRemoteSwiftPackageReference "alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D85AC3852671C5BC006D1256 /* Project object */;
 }
